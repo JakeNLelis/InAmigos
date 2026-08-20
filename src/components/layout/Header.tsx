@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -12,8 +12,20 @@ export default function Header() {
     { label: "OUR CAUSE", href: "/#causes" },
     { label: "VOLUNTEER", href: "/#volunteers" },
     { label: "EVENTS", href: "/events" },
-    { label: "CONTACT", href: "/#contact" },
+    { label: "CONTACT", href: "/contact" },
   ];
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const path = window.location.pathname;
+      if (path.includes("/about")) setActiveNav("ABOUT");
+      else if (path.includes("/events")) setActiveNav("EVENTS");
+      else if (path.includes("/contact")) setActiveNav("CONTACT");
+      else if (window.location.hash === "#causes") setActiveNav("OUR CAUSE");
+      else if (window.location.hash === "#volunteers") setActiveNav("VOLUNTEER");
+      else if (path === "/" || path === "") setActiveNav("HOME");
+    }
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-[10px] border-b border-[#e1e3e4] transition-all duration-200 font-['Manrope']">

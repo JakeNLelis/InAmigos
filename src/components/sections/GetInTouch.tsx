@@ -30,12 +30,12 @@ export default function GetInTouch() {
 
           {/* Contact Details Quick List */}
           <div className="space-y-3.5 pt-2 text-sm text-[#3c4a42]">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-[6px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49] shrink-0">
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-[6px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49] shrink-0 mt-0.5">
                 <MapPin className="w-4 h-4" />
               </div>
-              <span className="font-medium text-[#191c1d]">
-                Chhattisgarh, India
+              <span className="font-medium text-[#191c1d] leading-snug">
+                Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh 495555
               </span>
             </div>
 
@@ -44,10 +44,10 @@ export default function GetInTouch() {
                 <Mail className="w-4 h-4" />
               </div>
               <a
-                href="mailto:inamigosfoundation@gmail.com"
-                className="hover:text-[#006c49] transition-colors font-medium"
+                href="mailto:support@inamigosfoundation.org.in"
+                className="hover:text-[#006c49] transition-colors font-medium text-xs sm:text-sm"
               >
-                inamigosfoundation@gmail.com
+                support@inamigosfoundation.org.in
               </a>
             </div>
 
@@ -55,19 +55,24 @@ export default function GetInTouch() {
               <div className="w-8 h-8 rounded-[6px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49] shrink-0">
                 <Phone className="w-4 h-4" />
               </div>
-              <span className="font-medium">+91 98765 43210</span>
+              <a
+                href="tel:+916267309902"
+                className="font-medium text-[#191c1d] hover:text-[#006c49] transition-colors"
+              >
+                +91 626 730 9902
+              </a>
             </div>
           </div>
 
           {/* Action Button (0.5rem / 8px radius) */}
           <div className="pt-3">
             <motion.a
-              href="mailto:inamigosfoundation@gmail.com"
+              href="/contact"
               whileHover={{ y: -3, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-[8px] bg-[#006c49] hover:bg-[#005a3c] text-white text-sm font-bold tracking-[0.05em] uppercase shadow-xs transition-all duration-200"
             >
-              <span>Contact Us</span>
+              <span>Contact Us Form</span>
               <ArrowRight className="w-4 h-4" />
             </motion.a>
           </div>

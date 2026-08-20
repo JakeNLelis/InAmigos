@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
 import {
-  Sparkles,
   ArrowRight,
   ShieldCheck,
   Award,
@@ -94,8 +93,8 @@ export default function AboutUs() {
         >
           <div className="w-full rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.06)] border border-[#e1e3e4] bg-[#f8f9fa] group">
             <img
-              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80"
-              alt="InAmigos Foundation Community Outreach & Social Impact"
+              src="/gallery/592891085_1179481434315985_1180859562307713661_n.jpg"
+              alt="InAmigos Foundation Pan-India Operations & Team"
               className="w-full h-[360px] sm:h-[440px] lg:h-[480px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
           </div>

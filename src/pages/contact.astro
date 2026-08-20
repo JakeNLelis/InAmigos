@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/layout/TopBar.astro';
+import Header from '../components/layout/Header';
+import ContactSection from '../components/contact/ContactSection';
+import FoundationFooter from '../components/layout/FoundationFooter.astro';
+---
+
+<Layout title="Contact Us — InAmigos Foundation | Bilaspur, Chhattisgarh">
+  {/* Top Info Bar */}
+  <TopBar />
+
+  {/* Header with Navigation */}
+  <Header client:load />
+
+  <main class="font-['Manrope'] bg-[#f8f9fa] text-[#191c1d]">
+    
+    {/* Breadcrumb Header */}
+    <section class="bg-[#ffffff] pt-12 pb-6 border-b border-[#edeeef]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]" aria-label="Breadcrumb">
+          <a href="/" class="hover:underline">Home</a>
+          <span class="text-[#bbcabf]">•</span>
+          <span class="text-[#3c4a42]">Contact Us</span>
+        </nav>
+      </div>
+    </section>
+
+    {/* Form & Details Section (matching exact design) */}
+    <ContactSection client:load />
+
+    {/* Location Map Section */}
+    <section class="py-12 bg-[#ffffff] border-t border-[#edeeef]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div class="space-y-1">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#191c1d]">Location & Base in Chhattisgarh</h2>
+        </div>
+
+        <div class="relative w-full rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-[#e1e3e4] bg-[#f8f9fa]">
+          <iframe
+            src="https://maps.google.com/maps?q=22.14503852789772,82.29019328261138&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            title="InAmigos Foundation Location Map"
+            class="w-full h-[360px] sm:h-[420px] border-0 block"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  {/* Footer */}
+  <FoundationFooter />
+</Layout>

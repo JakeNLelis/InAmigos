@@ -1,0 +1,117 @@
+---
+// Zero-runtime Preloader with smooth fade-out and custom keyframe animation
+---
+
+<div id="page-preloader" class="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-white transition-opacity duration-500 ease-out font-['Manrope']">
+  <div class="relative flex flex-col items-center justify-center gap-8">
+    
+    {/* Geometric 4-color Morphing Loader */}
+    <div class="loader-wrapper relative w-16 h-16 flex items-center justify-center">
+      <div class="custom-morph-loader"></div>
+    </div>
+
+    {/* Optional subtle branding text */}
+    <div class="flex flex-col items-center gap-1.5 animate-pulse">
+      <span class="text-xs font-bold uppercase tracking-[0.15em] text-[#006c49]">InAmigos Foundation</span>
+      <span class="text-[11px] text-[#8c948e] font-medium tracking-wide">Uniting Minds For Change</span>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .custom-morph-loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+  }
+
+  .custom-morph-loader:before,
+  .custom-morph-loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-morph-loader:before {
+    animation: morphBefore8 2s infinite;
+  }
+
+  .custom-morph-loader:after {
+    animation: morphAfter6 2s infinite;
+  }
+
+  @keyframes morphBefore8 {
+    0% {
+      width: 0.5em;
+      box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    35% {
+      width: 2.5em;
+      box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    70% {
+      width: 0.5em;
+      box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    100% {
+      box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+  }
+
+  @keyframes morphAfter6 {
+    0% {
+      height: 0.5em;
+      box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+
+    35% {
+      height: 2.5em;
+      box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+
+    70% {
+      height: 0.5em;
+      box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+
+    100% {
+      box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+  }
+</style>
+
+<script is:inline>
+  // Hide preloader smoothly on load or after a brief fallback delay
+  function dismissPreloader() {
+    const preloader = document.getElementById('page-preloader');
+    if (!preloader) return;
+    
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 500);
+  }
+
+  if (document.readyState === 'complete') {
+    setTimeout(dismissPreloader, 350);
+  } else {
+    window.addEventListener('load', () => {
+      setTimeout(dismissPreloader, 350);
+    });
+    // Safety fallback: dismiss after max 2.5s regardless of asset load status
+    setTimeout(dismissPreloader, 2500);
+  }
+</script>

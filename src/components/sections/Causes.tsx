@@ -8,8 +8,7 @@ const CAUSES_DATA = [
     title: "Project Bachpanshala (Child Welfare & Education)",
     description:
       "Providing free education, stationery, books, healthcare, and mentorship to rural and underprivileged children.",
-    image:
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/637640724_1236697955260999_7323670824020618195_n.jpg",
     href: "#donate",
   },
   {
@@ -17,8 +16,7 @@ const CAUSES_DATA = [
     title: "Project Udaan (Women & Girl Child Empowerment)",
     description:
       "Empowering girls and women through education, skill development, and financial literacy.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/649873313_1250692197194908_5533923742098471725_n.jpg",
     href: "#donate",
   },
   {
@@ -26,8 +24,7 @@ const CAUSES_DATA = [
     title: "Project Prakriti (Environment & Sustainability)",
     description:
       "Environmental conservation, climate sustainability workshops, farmer support, and mass tree planting.",
-    image:
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/518777262_1060431876220942_4132400102800644315_n.jpg",
     href: "#donate",
   },
   {
@@ -35,8 +32,7 @@ const CAUSES_DATA = [
     title: "Project Seva (Hunger Relief & Essential Supplies)",
     description:
       "Distributing daily hot meals in slum areas, dry ration kits, and winter clothes/blankets to homeless and destitute families.",
-    image:
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/597408282_1179495034314625_2498788752597277326_n.jpg",
     href: "#donate",
   },
   {
@@ -44,8 +40,7 @@ const CAUSES_DATA = [
     title: "Project Jeev (Animal Welfare & Rescue)",
     description:
       "Daily feeding rounds, emergency rescue, and veterinary healthcare support for stray and injured animals.",
-    image:
-      "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/515436142_1058142469783216_9036160058728734144_n.jpg",
     href: "#donate",
   },
   {
@@ -53,8 +48,7 @@ const CAUSES_DATA = [
     title: "Project Vikas (Youth Training & Skill Development)",
     description:
       "Practical learning, creative problem solving, and career preparation workshops for youth and students.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+    image: "/gallery/656691606_1264373315826796_2188954449283016888_n.jpg",
     href: "#donate",
   },
 ];

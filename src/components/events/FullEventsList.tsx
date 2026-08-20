@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Calendar, ExternalLink, Sparkles, ArrowRight } from 'lucide-react';
+import { Calendar, ExternalLink, ArrowRight } from 'lucide-react';
 
 interface EventItem {
   id: string;
@@ -23,9 +23,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'International Day of Women and Girls in Science',
     date: 'February 11, 2025',
     description: 'Digital workshops and community talks highlighting the importance of STEM education, digital literacy, and skill-building for young girls.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/649873313_1250692197194908_5533923742098471725_n.jpg',
     channelName: 'Instagram (@inamigos)',
-    channelUrl: 'https://www.instagram.com/inamigos/',
+    channelUrl: 'https://instagram.com/inamigos?utm_medium=copy_link',
   },
   {
     id: 'e2',
@@ -34,7 +34,7 @@ const ALL_EVENTS: EventItem[] = [
     title: 'International Day of Happiness Community Outreach',
     date: 'March 20, 2025',
     description: 'Community interaction drive distributing sweets, nutritious meals, and hosting creative storytelling and interactive game sessions for children in slum clusters.',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/597408282_1179495034314625_2498788752597277326_n.jpg',
     channelName: 'Official Events Portal',
     channelUrl: 'https://inamigosfoundation.org.in/events',
   },
@@ -45,7 +45,7 @@ const ALL_EVENTS: EventItem[] = [
     title: 'World Water Day & Green Action Campaign',
     date: 'March 22, 2025',
     description: 'Clean water awareness sessions, local cleanliness drives, and community discussions on water conservation under the national "LiFE" (Lifestyle for Environment) framework.',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/537364223_1094416166155846_7689778449830767761_n.jpg',
     channelName: 'Facebook Official',
     channelUrl: 'https://www.facebook.com/InAmigos',
   },
@@ -58,9 +58,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Bachpanshala: Learning Beyond Classrooms',
     date: 'Monthly / Ongoing Weekend Sessions',
     description: 'On-ground informal schools providing foundational literacy, distribution of stationery kits, moral education, and student mentoring for underprivileged children.',
-    image: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/637640724_1236697955260999_7323670824020618195_n.jpg',
     channelName: 'Instagram (@inamigos)',
-    channelUrl: 'https://www.instagram.com/inamigos/',
+    channelUrl: 'https://instagram.com/inamigos?utm_medium=copy_link',
   },
   {
     id: 'e5',
@@ -69,9 +69,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Winter Blanket & Hot Food Relief Drives',
     date: 'Seasonal & Weekly Distributions',
     description: 'Volunteer distribution of warm blankets, winter clothes, and daily hot meals to homeless individuals and destitute families across Bilaspur and neighboring districts.',
-    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/597408282_1179495034314625_2498788752597277326_n.jpg',
     channelName: 'LinkedIn Official',
-    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation/posts/',
+    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation',
   },
   {
     id: 'e6',
@@ -80,7 +80,7 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Mass Plantation & Environmental Clean-Up',
     date: 'Monsoon Season & June 5',
     description: 'Mass tree sapling plantations across urban and rural parts of Chhattisgarh, achieving 20,000+ trees planted to restore local green cover.',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/518777262_1060431876220942_4132400102800644315_n.jpg',
     channelName: 'Facebook Official',
     channelUrl: 'https://www.facebook.com/InAmigos',
   },
@@ -91,9 +91,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Summer Water Bowl & Stray Animal Feeding',
     date: 'Peak Summer & Daily Feeding',
     description: 'Daily feeding rounds for over 50+ stray animals, emergency medical rescues, and placing clean water bowls across neighborhood streets.',
-    image: 'https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/515436142_1058142469783216_9036160058728734144_n.jpg',
     channelName: 'Instagram (@inamigos)',
-    channelUrl: 'https://www.instagram.com/inamigos/',
+    channelUrl: 'https://instagram.com/inamigos?utm_medium=copy_link',
   },
   {
     id: 'e8',
@@ -102,9 +102,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Tech For Change & Digital Literacy Cohorts',
     date: 'Continuous 1–3 Month Cycles',
     description: 'Training thousands of student interns nationwide in social work, field research, content creation, AI tools, and coding for rural education camps.',
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/656691606_1264373315826796_2188954449283016888_n.jpg',
     channelName: 'LinkedIn Official',
-    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation/posts/',
+    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation',
   },
 
   // 3. Foundation Milestone & Disaster Relief Campaigns
@@ -115,9 +115,9 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Foundation Inauguration & Founding Contribution',
     date: 'September 23, 2020',
     description: 'Official incorporation as a Section 8 non-profit entity. Contributed ₹30,000 to the PM CARES Fund during its founding period to support pandemic relief.',
-    image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb9?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/592891085_1179481434315985_1180859562307713661_n.jpg',
     channelName: 'LinkedIn Channel',
-    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation/posts/',
+    channelUrl: 'https://www.linkedin.com/company/inamigos-foundation',
   },
   {
     id: 'e10',
@@ -126,7 +126,7 @@ const ALL_EVENTS: EventItem[] = [
     title: 'Nationwide COVID-19 Relief & Sanitation Drive',
     date: '2020 – 2021',
     description: 'Ground-level emergency relief distributing meals to over 1,500+ individuals, distributing sanitizers/masks in rural Chhattisgarh, and supplying books/stationery in Kolkata.',
-    image: 'https://images.unsplash.com/photo-1584483766114-2cea6facdf57?auto=format&fit=crop&w=700&q=80',
+    image: '/gallery/642230564_1239806461616815_8380653594927626086_n.jpg',
     channelName: 'Facebook Channel',
     channelUrl: 'https://www.facebook.com/InAmigos',
   },
@@ -232,7 +232,7 @@ export default function FullEventsList() {
                   </a>
 
                   <a
-                    href="/#contact"
+                    href="/contact"
                     className="inline-flex items-center gap-1 font-bold text-[#191c1d] group-hover:text-[#006c49] transition-colors uppercase tracking-[0.05em]"
                   >
                     <span>Participate</span>

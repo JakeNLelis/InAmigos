@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import PageLoader from '../components/common/PageLoader.astro';
 
 interface Props {
   title?: string;
@@ -26,6 +27,9 @@ const {
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-[#f8f9fa] text-[#191c1d] font-['Manrope'] antialiased selection:bg-[#006c49] selection:text-white">
+    {/* Page Preloader */}
+    <PageLoader />
+
     <slot />
   </body>
 </html>

@@ -10,8 +10,7 @@ const RECENT_EVENTS = [
     date: "February 11, 2025",
     description:
       "Digital workshops and community talks highlighting the importance of STEM education, digital literacy, and skill-building for young girls.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80",
+    image: "/gallery/649873313_1250692197194908_5533923742098471725_n.jpg",
   },
   {
     id: "e2",
@@ -20,8 +19,7 @@ const RECENT_EVENTS = [
     date: "March 20, 2025",
     description:
       "Community interaction drive distributing sweets, nutritious meals, and hosting creative storytelling and interactive game sessions for children in slum clusters.",
-    image:
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80",
+    image: "/gallery/597408282_1179495034314625_2498788752597277326_n.jpg",
   },
   {
     id: "e3",
@@ -30,8 +28,7 @@ const RECENT_EVENTS = [
     date: "March 22, 2025",
     description:
       'Clean water awareness sessions, local cleanliness drives, and community discussions on water conservation under the national "LiFE" framework.',
-    image:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80",
+    image: "/gallery/537364223_1094416166155846_7689778449830767761_n.jpg",
   },
 ];
 
