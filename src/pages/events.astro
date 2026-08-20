@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/layout/TopBar.astro';
+import Header from '../components/layout/Header';
+import FullEventsList from '../components/events/FullEventsList';
+import FoundationFooter from '../components/layout/FoundationFooter.astro';
+---
+
+<Layout title="Events & Campaigns — InAmigos Foundation | Grassroots Community Impact">
+  {/* Top Info Bar */}
+  <TopBar />
+
+  {/* Header with Navigation */}
+  <Header client:load />
+
+  <main class="font-['Manrope'] bg-[#f8f9fa] text-[#191c1d]">
+    
+    {/* Hero Header Banner */}
+    <section class="relative bg-[#ffffff] pt-14 pb-20 border-b border-[#edeeef] overflow-hidden">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Breadcrumb */}
+        <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.05em] text-[#006c49] mb-6" aria-label="Breadcrumb">
+          <a href="/" class="hover:underline">Home</a>
+          <span class="text-[#bbcabf]">•</span>
+          <span class="text-[#3c4a42]">Events & Campaigns</span>
+        </nav>
+
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#006c49]/10 text-[#006c49] text-xs font-bold tracking-[0.05em] uppercase">
+            <span>ALL CAMPAIGNS & FIELD ACTIVATIONS</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#191c1d] leading-tight">
+            Community Outreach, Awareness & Relief Campaigns
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#3c4a42] leading-[28px]">
+            Explore our comprehensive log of historical disaster relief operations, seasonal community drives, weekend educational workshops, and recurring national campaigns across India.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    {/* Full Events List & Interactive Category Filter */}
+    <section class="py-16 sm:py-24">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <FullEventsList client:load />
+      </div>
+    </section>
+
+  </main>
+
+  {/* Footer */}
+  <FoundationFooter />
+</Layout>

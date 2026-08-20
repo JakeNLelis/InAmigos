@@ -1,32 +1,34 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeNav, setActiveNav] = useState('');
+  const [activeNav, setActiveNav] = useState("");
 
   const navItems = [
-    { label: 'HOME', href: '/' },
-    { label: 'ABOUT', href: '/about' },
-    { label: 'OUR CAUSE', href: '/#causes' },
-    { label: 'VOLUNTEER', href: '/#volunteers' },
-    { label: 'EVENTS', href: '/#events' },
-    { label: 'GALLERY', href: '/#gallery' },
-    { label: 'CONTACT', href: '/#contact' },
+    { label: "HOME", href: "/" },
+    { label: "ABOUT", href: "/about" },
+    { label: "OUR CAUSE", href: "/#causes" },
+    { label: "VOLUNTEER", href: "/#volunteers" },
+    { label: "EVENTS", href: "/events" },
+    { label: "CONTACT", href: "/#contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-[10px] border-b border-[#e1e3e4] transition-all duration-200 font-['Manrope']">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          
           {/* Foundation Logo (Only photo from /logo.png, no extra text) */}
-          <a href="/" className="flex items-center group py-2" aria-label="InAmigos Foundation Home">
+          <a
+            href="/"
+            className="flex items-center group py-2"
+            aria-label="InAmigos Foundation Home"
+          >
             <img
               src="/logo.png"
               alt="InAmigos Foundation Logo"
-              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+              className="h-14 sm:h-20 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
             />
           </a>
 
@@ -40,7 +42,7 @@ export default function Header() {
                   href={item.href}
                   onClick={() => setActiveNav(item.label)}
                   className={`py-2 transition-colors relative ${
-                    isActive ? 'text-[#006c49]' : 'hover:text-[#006c49]'
+                    isActive ? "text-[#006c49]" : "hover:text-[#006c49]"
                   }`}
                 >
                   <span>{item.label}</span>
@@ -72,10 +74,13 @@ export default function Header() {
               className="xl:hidden p-2 rounded-[8px] text-[#191c1d] hover:bg-[#f3f4f5]"
               aria-label="Toggle navigation"
             >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
-
         </div>
       </div>
 
@@ -84,7 +89,7 @@ export default function Header() {
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="xl:hidden bg-white border-t border-[#e1e3e4] px-6 py-4 space-y-2.5"
           >

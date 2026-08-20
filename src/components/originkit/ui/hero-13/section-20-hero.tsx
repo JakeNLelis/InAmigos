@@ -3,17 +3,38 @@ import GalleryTunnel from "./gallery-tunnel";
 import { HeroContent } from "./hero-content";
 
 const FOUNDATION_IMAGES = [
-  "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80",
-  "/originkit/hero-13/potrait-1.png",
-  "/originkit/hero-13/potrait-2.png",
-  "/originkit/hero-13/potrait-3.png",
+  "/gallery/1743051485.jpg",
+  "/gallery/1743051466.jpg",
+  "/gallery/1743051449.jpg",
+  "/gallery/1743051438.jpg",
+  "/gallery/1743051382.jpg",
+  "/gallery/1738299164.jpg",
+  "/gallery/1738238755.JPG",
+  "/gallery/1738238744.jpg",
+  "/gallery/1738238725.jpg",
+  "/gallery/1738238698.jpg",
+  "/gallery/1738054473.jpg",
+  "/gallery/1738054458.jpg",
+  "/gallery/1738054440.jpg",
+  "/gallery/1738048982.jpg",
+  "/gallery/1690908498.jpg",
+  "/gallery/1690908483.jpg",
+  "/gallery/1690908403.jpg",
+  "/gallery/1690908391.jpg",
+  "/gallery/1690908380.jpg",
+  "/gallery/1690908369.jpg",
+  "/gallery/1690908359.jpg",
+  "/gallery/1690908350.jpg",
+  "/gallery/1690908247.jpeg",
 ];
 
-const LIGHT_SLAB_COLORS = ["#f8f9fa", "#ffffff", "#edeeef", "#adedd3", "#f3f4f5"];
+const LIGHT_SLAB_COLORS = [
+  "#f8f9fa",
+  "#ffffff",
+  "#edeeef",
+  "#adedd3",
+  "#f3f4f5",
+];
 
 export const Section20Hero = () => {
   const handleExploreGallery = () => {

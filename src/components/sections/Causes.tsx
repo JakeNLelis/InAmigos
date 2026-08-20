@@ -88,20 +88,6 @@ export default function Causes() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section (Centered) */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          {/* Label: OUR CAUSES with solid square indicator */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.5, 0, 0, 1] }}
-            className="inline-flex items-center justify-center gap-2 mb-4"
-          >
-            <span className="w-2 h-2 bg-[#006c49] shrink-0" aria-hidden="true" />
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1a1a1a]">
-              OUR CAUSES
-            </span>
-          </motion.div> */}
-
           {/* Main Title: "Our Causes" Animated word-by-word */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-[#1a1a1a] flex flex-wrap justify-center gap-x-3 sm:gap-x-4">
             {titleWords.map((word, index) => (
