@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "InAmigos Foundation — Serving Humanity with Compassion",
+  description = "Dedicated to community welfare, education, healthcare and sustainable positive change for marginalized groups."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="/inamigos_favicon.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f8f9fa] text-[#191c1d] font-['Manrope'] antialiased selection:bg-[#006c49] selection:text-white">
+    <slot />
+  </body>
+</html>

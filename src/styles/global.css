@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-surface: #f8f9fa;
+  --color-surface-dim: #d9dadb;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #3c4a42;
+  --color-outline: #6c7a71;
+  --color-outline-variant: #bbcabf;
+  
+  --color-primary: #006c49;
+  --color-primary-hover: #005a3c;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #10b981;
+  --color-on-primary-container: #00422b;
+  
+  --color-secondary: #2b6954;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #adedd3;
+  --color-on-secondary-container: #306d58;
+
+  --color-tertiary: #a43a3a;
+  --color-on-tertiary: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-on-surface);
+    background-color: var(--color-surface);
+  }
+
+  body {
+    background-color: #f8f9fa;
+    color: #191c1d;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.label-caps {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.display-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .display-lg {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.headline-md {
+  font-family: 'Manrope', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.headline-sm {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.body-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.body-md {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

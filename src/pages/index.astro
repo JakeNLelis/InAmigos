@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/layout/TopBar.astro';
+import Header from '../components/layout/Header';
+import Hero13 from '../components/originkit/hero-13';
+import AboutUs from '../components/sections/AboutUs';
+import ImpactStats from '../components/sections/ImpactStats';
+import Causes from '../components/sections/Causes';
+import Volunteers from '../components/sections/Volunteers';
+import Events from '../components/sections/Events';
+import Gallery from '../components/sections/Gallery';
+import GetInTouch from '../components/sections/GetInTouch';
+import FoundationFooter from '../components/layout/FoundationFooter.astro';
+---
+
+<Layout title="InAmigos Foundation — Serving Humanity with Compassion">
+  {/* Top Info Bar with Contact Email & Social Links */}
+  <TopBar />
+
+  {/* Main Header with InAmigos Foundation Branding & Navigation */}
+  <Header client:load />
+
+  <main>
+    {/* Originkit Hero 13: 3D Gallery Tunnel with FocusReveal Headline */}
+    <Hero13 client:only="react" />
+
+    {/* About Us Section */}
+    <AboutUs client:visible />
+
+    {/* Green Impact Statistics Banner (Placed directly after About Us) */}
+    <ImpactStats client:visible />
+
+    {/* Our Causes Section with 6 Feature Cards */}
+    <Causes client:visible />
+
+    {/* Our Volunteers Profiles */}
+    <Volunteers client:visible />
+
+    {/* Our Events Showcase */}
+    <Events client:visible />
+
+    {/* Our Gallery Photo Mosaic */}
+    <Gallery client:visible />
+
+    {/* Get In Touch Section */}
+    <GetInTouch client:visible />
+  </main>
+
+  {/* Responsive 12-Column Footer with Newsletter */}
+  <FoundationFooter />
+</Layout>

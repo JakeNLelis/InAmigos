@@ -1,0 +1,158 @@
+---
+// Responsive Footer with 12-column grid and exact 3-column link alignment
+---
+
+<footer class="bg-[#191c1d] text-[#bbcabf] pt-20 pb-12 rounded-t-[2.5rem] mt-10 border-t border-[#2e3132] font-['Manrope']">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Top Grid Container (12 Columns) */}
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-[#2e3132]">
+      
+      {/* Left Area: 3-Column Footer Links (7 Columns) */}
+      <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
+        
+        {/* Column 1 */}
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#4edea3]">Navigation</span>
+          <ul class="flex flex-col gap-3 text-xs sm:text-sm">
+            <li>
+              <a href="#home" class="text-white font-medium hover:text-[#4edea3] transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/about" class="hover:text-white transition-colors">
+                About Foundation
+              </a>
+            </li>
+            <li>
+              <a href="#causes" class="hover:text-white transition-colors">
+                Our Causes
+              </a>
+            </li>
+            <li>
+              <a href="#volunteers" class="hover:text-white transition-colors">
+                Volunteer Programs
+              </a>
+            </li>
+            <li>
+              <a href="#events" class="hover:text-white transition-colors">
+                Upcoming Events
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 2 */}
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#4edea3]">Support & Care</span>
+          <ul class="flex flex-col gap-3 text-xs sm:text-sm">
+            <li>
+              <a href="#donate" class="hover:text-white transition-colors">
+                Donate Online
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-white transition-colors">
+                Become a Partner
+              </a>
+            </li>
+            <li>
+              <a href="#causes" class="hover:text-white transition-colors">
+                Ration Drives
+              </a>
+            </li>
+            <li>
+              <a href="#causes" class="hover:text-white transition-colors">
+                Tree Plantation
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-white transition-colors">
+                Emergency Relief
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 3 */}
+        <div class="flex flex-col gap-4 col-span-2 sm:col-span-1">
+          <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#4edea3]">Resources</span>
+          <ul class="flex flex-col gap-3 text-xs sm:text-sm">
+            <li>
+              <a href="#gallery" class="hover:text-white transition-colors">
+                Photo Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#events" class="hover:text-white transition-colors">
+                Impact Stories
+              </a>
+            </li>
+            <li>
+              <a href="#events" class="hover:text-white transition-colors">
+                Foundation Blogs
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      {/* Right Area: Newsletter Subscription (5 Columns) */}
+      <div class="lg:col-span-5 flex flex-col items-start lg:items-end lg:text-right space-y-4">
+        <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+          Subscribe to Updates
+        </h3>
+        <p class="text-xs sm:text-sm text-[#bbcabf] max-w-sm leading-relaxed">
+          Join our newsletter to receive quarterly community impact summaries, volunteer opportunities, and seasonal relief updates.
+        </p>
+
+        {/* Form Box with 8px radius */}
+        <form class="flex w-full max-w-md bg-[#2e3132] rounded-[8px] p-1.5 border border-[#6c7a71]/40 shadow-inner" onSubmit="return false;">
+          <input
+            type="email"
+            placeholder="Your email here"
+            class="w-full bg-transparent text-white px-4 outline-none text-xs sm:text-sm placeholder-[#bbcabf]/70"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-[#006c49] hover:bg-[#005a3c] text-white px-6 py-2.5 rounded-[6px] text-xs font-bold uppercase tracking-[0.05em] transition-all shrink-0 cursor-pointer shadow-xs"
+          >
+            Join
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    {/* Bottom Bar: White Logo, Tagline & Copyright */}
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#bbcabf] gap-4">
+      <div class="flex items-center gap-3">
+        <img
+          src="/logo_white.jpg"
+          alt="InAmigos Foundation Logo"
+          class="h-8 w-auto object-contain rounded-[4px]"
+        />
+        <span>•</span>
+        <span>© {new Date().getFullYear()} InAmigos Foundation. All rights reserved.</span>
+      </div>
+
+      <div class="text-[#4edea3] font-semibold tracking-wide">
+        Serving Humanity with Compassion
+      </div>
+    </div>
+
+  </div>
+</footer>

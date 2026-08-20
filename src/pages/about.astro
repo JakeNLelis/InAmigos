@@ -1,0 +1,443 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/layout/TopBar.astro';
+import Header from '../components/layout/Header';
+import FoundationFooter from '../components/layout/FoundationFooter.astro';
+---
+
+<Layout title="About Us — InAmigos Foundation | Serving Humanity with Compassion">
+  {/* Top Info Bar */}
+  <TopBar />
+
+  {/* Header with Navigation */}
+  <Header client:load />
+
+  <main class="font-['Manrope'] bg-[#f8f9fa] text-[#191c1d]">
+    
+    {/* 1. Hero Header Banner */}
+    <section class="relative bg-[#ffffff] pt-14 pb-20 border-b border-[#edeeef] overflow-hidden">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Breadcrumb */}
+        <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.05em] text-[#006c49] mb-6" aria-label="Breadcrumb">
+          <a href="/" class="hover:underline">Home</a>
+          <span class="text-[#bbcabf]">•</span>
+          <span class="text-[#3c4a42]">About Us</span>
+        </nav>
+
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#006c49]/10 text-[#006c49] text-xs font-bold tracking-[0.05em] uppercase">
+            <span>ABOUT INAMIGOS FOUNDATION</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#191c1d] leading-tight">
+            Serving Humanity with Integrity, Passion & Collective Action
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#3c4a42] leading-[28px]">
+            Founded on <span class="font-semibold text-[#191c1d]">September 23, 2020</span>, by <span class="font-semibold text-[#191c1d]">Mr. Govind Shukla (Founder & CEO)</span>, InAmigos Foundation is a Section 8 registered non-profit organization headquartered in Chhattisgarh, driving grassroots social impact across India.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    {/* 2. Founder & Origin Story Section */}
+    <section class="py-16 sm:py-24 bg-[#ffffff]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: Origin Story */}
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">
+              <span class="w-2 h-2 rounded-full bg-[#006c49]"></span>
+              <span>OUR STORY & MISSION</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-4xl font-bold text-[#191c1d] tracking-tight leading-snug">
+              From Local Community Relief to a Pan-India Social Impact Movement
+            </h2>
+
+            <div class="space-y-4 text-sm sm:text-base text-[#3c4a42] leading-[28px]">
+              <p>
+                InAmigos Foundation was established during a critical period in September 2020 with a single foundational vision: to harness the boundless potential of volunteers, professionals, and corporate partners to solve pressing humanitarian challenges.
+              </p>
+              <p>
+                What began with ground-level food distribution and pandemic relief in Chhattisgarh has rapidly evolved into a multi-disciplinary social welfare movement spanning hunger relief, primary education, animal welfare, women empowerment, ecological conservation, and digital youth skill development nationwide.
+              </p>
+              <p>
+                Led by Founder & CEO <strong>Mr. Govind Shukla</strong>, our organization operates with rigorous governance, financial accountability, and transparent ground-level execution to ensure every rupee donated directly empowers vulnerable lives.
+              </p>
+            </div>
+
+            {/* Quick Metrics Bar */}
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-[#edeeef] text-center">
+              <div class="p-4 rounded-[12px] bg-[#f8f9fa] border border-[#e1e3e4]">
+                <div class="text-2xl sm:text-3xl font-bold text-[#006c49]">2020</div>
+                <div class="text-xs font-bold text-[#3c4a42] uppercase tracking-[0.05em] mt-1">Founded</div>
+              </div>
+              <div class="p-4 rounded-[12px] bg-[#f8f9fa] border border-[#e1e3e4]">
+                <div class="text-2xl sm:text-3xl font-bold text-[#006c49]">50,000+</div>
+                <div class="text-xs font-bold text-[#3c4a42] uppercase tracking-[0.05em] mt-1">Meals Served</div>
+              </div>
+              <div class="p-4 rounded-[12px] bg-[#f8f9fa] border border-[#e1e3e4]">
+                <div class="text-2xl sm:text-3xl font-bold text-[#006c49]">30,000+</div>
+                <div class="text-xs font-bold text-[#3c4a42] uppercase tracking-[0.05em] mt-1">Interns Trained</div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Right Column: Photo Mosaic Container */}
+          <div class="lg:col-span-5 space-y-4">
+            <div class="rounded-[16px] overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.06)] border border-[#e1e3e4] bg-[#f8f9fa]">
+              <img
+                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80"
+                alt="InAmigos Foundation Leadership and Ground Volunteer Team"
+                class="w-full h-[380px] sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            
+            <div class="p-4 rounded-[12px] bg-[#adedd3]/30 border border-[#adedd3] text-xs text-[#00422b] leading-relaxed">
+              <strong>Base:</strong> Chhattisgarh, India • <strong>Registration:</strong> Section 8 Central Govt License • <strong>Operations:</strong> Pan-India Outreach
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    {/* 3. Credentials & Recognitions (Trust Matrix) */}
+    <section class="py-16 sm:py-24 bg-[#f8f9fa] border-y border-[#edeeef]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#006c49]/10 text-[#006c49] text-xs font-bold tracking-[0.05em] uppercase">
+            <span>GOVERNANCE & ACCREDITATION</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#191c1d] tracking-tight">
+            Our Credentials & Recognitions
+          </h2>
+          <p class="text-sm sm:text-base text-[#3c4a42]">
+            Committed to international quality benchmarks, financial transparency, and seamless corporate partnerships.
+          </p>
+        </div>
+
+        {/* 5 Credentials Cards */}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Card 1: Section 8 */}
+          <div class="bg-white rounded-[16px] p-6 border border-[#e1e3e4] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] space-y-3 hover:border-[#006c49] transition-colors">
+            <div class="w-12 h-12 rounded-[8px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">Section 8 Registered</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Officially licensed by the Central Government of India as a non-profit company dedicated exclusively to charitable and social welfare objectives.
+            </p>
+          </div>
+
+          {/* Card 2: 80G & 12A */}
+          <div class="bg-white rounded-[16px] p-6 border border-[#e1e3e4] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] space-y-3 hover:border-[#006c49] transition-colors">
+            <div class="w-12 h-12 rounded-[8px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">80G & 12A Certified</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Ensuring 100% financial transparency and governance accountability while granting 50% tax exemption benefits under Section 80G for all donors.
+            </p>
+          </div>
+
+          {/* Card 3: CSR-1 */}
+          <div class="bg-white rounded-[16px] p-6 border border-[#e1e3e4] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] space-y-3 hover:border-[#006c49] transition-colors">
+            <div class="w-12 h-12 rounded-[8px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">CSR-1 Registered</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Registered with the Ministry of Corporate Affairs (MCA), qualifying InAmigos Foundation to collaborate directly on corporate CSR mandates.
+            </p>
+          </div>
+
+          {/* Card 4: NITI Aayog */}
+          <div class="bg-white rounded-[16px] p-6 border border-[#e1e3e4] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] space-y-3 hover:border-[#006c49] transition-colors">
+            <div class="w-12 h-12 rounded-[8px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">NITI Aayog Registered</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Empaneled on NGO Darpan (NITI Aayog), aligning our community programs with India’s national development goals and public welfare frameworks.
+            </p>
+          </div>
+
+          {/* Card 5: IAF ISO 9001:2015 */}
+          <div class="bg-white rounded-[16px] p-6 border border-[#e1e3e4] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] space-y-3 hover:border-[#006c49] transition-colors md:col-span-2 lg:col-span-2">
+            <div class="w-12 h-12 rounded-[8px] bg-[#006c49]/10 flex items-center justify-center text-[#006c49]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">IAF ISO 9001:2015 Certified</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Internationally recognized Quality Management System accreditation by the International Accreditation Forum (IAF), signifying uncompromising quality standards across all operations and service delivery.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    {/* 4. Key Initiatives & Measured Impact (6 Deep Dives) */}
+    <section class="py-16 sm:py-24 bg-[#ffffff]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#006c49]/10 text-[#006c49] text-xs font-bold tracking-[0.05em] uppercase">
+            <span>OUR 6 CORE PILLARS</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#191c1d] tracking-tight">
+            Key Initiatives & Measured Impact
+          </h2>
+          <p class="text-sm sm:text-base text-[#3c4a42]">
+            Targeted social interventions creating measurable change in food security, education, environment, and livelihoods.
+          </p>
+        </div>
+
+        {/* 6 Grid Cards */}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          {/* 1. Project SEVA */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=700&q=80"
+                alt="Project Seva Hunger Relief"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">HUNGER RELIEF</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project SEVA</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Providing daily cooked meals, ration kits, and seasonal winter blanket distributions to destitute families and homeless communities.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: 50,000+ meals & clothing kits distributed
+              </div>
+            </div>
+          </div>
+
+          {/* 2. Project BACHPANSHALA */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80"
+                alt="Project Bachpanshala Child Education"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">CHILD WELFARE & EDUCATION</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project BACHPANSHALA</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Bridging educational gaps by training underprivileged children in basic digital literacy, foundational life skills, and school supplies.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: Hundreds of children supported into formal learning
+              </div>
+            </div>
+          </div>
+
+          {/* 3. Project JEEV */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=700&q=80"
+                alt="Project Jeev Animal Welfare"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">ANIMAL WELFARE & RESCUE</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project JEEV</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Dedicated to stray animal protection, veterinary medical rescues, summer water bowl installations, and regular neighborhood feeding drives.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: 50+ stray animals fed & protected daily
+              </div>
+            </div>
+          </div>
+
+          {/* 4. Project UDAAN */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80"
+                alt="Project Udaan Women Empowerment"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">WOMEN & GIRL EMPOWERMENT</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project UDAAN</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Empowering rural women through self-help groups, financial literacy, vocational handicrafts training, and menstrual health hygiene workshops.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: 900+ women & girls empowered with independence
+              </div>
+            </div>
+          </div>
+
+          {/* 5. Project PRAKRITI */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80"
+                alt="Project Prakriti Environment & Sustainability"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">ENVIRONMENT & CONSERVATION</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project PRAKRITI</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Promoting climate sustainability, eco-friendly farming workshops, clean water advocacy, and large-scale afforestation across Chhattisgarh.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: 20,000+ saplings planted across communities
+              </div>
+            </div>
+          </div>
+
+          {/* 6. Project VIKAS */}
+          <div class="rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] overflow-hidden flex flex-col justify-between group hover:border-[#006c49] transition-all">
+            <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80"
+                alt="Project Vikas Youth Skill Training"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">YOUTH TRAINING & EMPLOYABILITY</span>
+                <h3 class="text-xl font-bold text-[#191c1d] mt-1">Project VIKAS</h3>
+                <p class="text-xs sm:text-sm text-[#3c4a42] leading-[24px] mt-2">
+                  Equipping youth with career-ready skills through internship cohorts spanning data operations, finance, research, content writing, AI tools, and social work.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#e1e3e4] text-xs font-bold text-[#006c49]">
+                🎯 Impact: 30,000+ youth interns trained in 4 years
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    {/* 5. Philosophy of Collective Action & Transparency */}
+    <section class="py-16 sm:py-24 bg-[#f8f9fa] border-t border-[#edeeef]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="p-8 sm:p-12 rounded-[24px] bg-[#006c49] text-white flex flex-col lg:flex-row gap-8 lg:gap-12 items-center shadow-lg">
+          <div class="space-y-4 max-w-2xl">
+            <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#6ffbbe]">THE POWER OF COLLECTIVE ACTION</span>
+            <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+              Transparent Operations Creating Real, Measurable Change
+            </h2>
+            <p class="text-sm sm:text-base text-white/90 leading-[26px]">
+              At InAmigos Foundation, we believe sustainable societal transformation cannot happen in isolation. Through transparent auditing, real-time social media documentation, and deep corporate & volunteer engagement, every contribution directly uplifts lives.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <a
+              href="/#contact"
+              class="inline-block px-8 py-3.5 rounded-[8px] bg-white hover:bg-[#f3f4f5] text-[#006c49] font-bold text-xs sm:text-sm tracking-[0.05em] uppercase shadow-md transition-all"
+            >
+              Get In Touch With Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* 6. "Join Us in Making a Difference" Section */}
+    <section class="py-16 sm:py-24 bg-[#ffffff]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="max-w-2xl mx-auto space-y-4 mb-12">
+          <span class="text-xs font-bold uppercase tracking-[0.05em] text-[#006c49]">PARTICIPATE & CONTRIBUTE</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#191c1d] tracking-tight">
+            Join Us in Making a Difference
+          </h2>
+          <p class="text-sm sm:text-base text-[#3c4a42]">
+            Whether through volunteering, corporate CSR partnerships, or donations, your support strengthens our collective mission.
+          </p>
+        </div>
+
+        {/* 3 Pathway Cards */}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          
+          <div class="p-6 rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] space-y-4 text-center">
+            <div class="w-12 h-12 rounded-full bg-[#006c49]/10 text-[#006c49] flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">Volunteer</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Dedicate your time and passion to our weekend teaching sessions, food drives, and tree planting initiatives.
+            </p>
+            <a href="/#volunteers" class="inline-block text-xs font-bold text-[#006c49] uppercase tracking-[0.05em] hover:underline">
+              Join Volunteer Network →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] space-y-4 text-center">
+            <div class="w-12 h-12 rounded-full bg-[#006c49]/10 text-[#006c49] flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path><path d="M9 9v.01"></path><path d="M9 13v.01"></path><path d="M9 17v.01"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">CSR Partnership</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Collaborate under MCA CSR-1 guidelines for impactful, auditable corporate social responsibility programs.
+            </p>
+            <a href="/#contact" class="inline-block text-xs font-bold text-[#006c49] uppercase tracking-[0.05em] hover:underline">
+              Partner With Us →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-[16px] bg-[#f8f9fa] border border-[#e1e3e4] space-y-4 text-center">
+            <div class="w-12 h-12 rounded-full bg-[#006c49]/10 text-[#006c49] flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            </div>
+            <h3 class="text-lg font-bold text-[#191c1d]">Donate</h3>
+            <p class="text-xs sm:text-sm text-[#3c4a42] leading-[22px]">
+              Every financial gift is eligible for 80G tax benefits and directly funds hot meals, education kits, and tree saplings.
+            </p>
+            <a href="/#donate" class="inline-block text-xs font-bold text-[#006c49] uppercase tracking-[0.05em] hover:underline">
+              Donate Online →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  {/* Footer */}
+  <FoundationFooter />
+</Layout>
